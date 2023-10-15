@@ -9,7 +9,7 @@ spec:
       revisionTemplate:
         spec:
           container:
-            image: registry.<region>.bluemix.net/<namespace>/knative-node-kaniko # The URL to the image of the app on IBMCLOUD Registry
+            image: gcr.io/knative-samples/helloworld-go
             env:
-            - name: TARGET # The environment variable printed out by the sample app
-              value: "Kaniko Node App running on IBM Cloud"
+            - name: TARGET
+              value: "Node app running on openshift"
